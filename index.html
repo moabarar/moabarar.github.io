@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>Moab Arar</title>
-  <meta name="description" content="">
+  <meta name="description" content="Moab Arar is a Research Scientist at FAIR working on generative video models, real-time video generation, and world models.">
+  <meta property="og:title" content="Moab Arar">
+  <meta property="og:description" content="Research Scientist at FAIR working on generative video models, real-time video generation, and world models.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/img/me.jpg">
 
   <link rel="icon" type="image/png" href="/assets/img/favicon.png" sizes="32x32">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/style.css">
 
-  <link rel="stylesheet" href="/assets/css/other-main.css">
+  <link rel="stylesheet" href="/assets/css/other-main.css?v=11">
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/academicons.min.css">
   <link rel="canonical" href="/">
 </head>
 
@@ -26,18 +32,14 @@
 
 
 
-      <nav class="site-nav">
+      <a class="site-title" href="#about">Moab Arar</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
 
         <div class="trigger">
-          <!-- About -->
-          <a class="page-link" href="/">about</a>
+          <a class="page-link" href="#about">about</a>
 
           <a class="page-link" href="#publications">publications</a>
-
-          <a class="page-link" href="#talks">talks</a>
-
-          <a class="page-link" href="#social">contact</a>
-
 
         </div>
       </nav>
@@ -52,34 +54,40 @@
     <div class="wrapper">
       <div class="post">
 
-        <header class="post-header">
-          <h1 class="post-title"><strong>Moab Arar</strong></h1>
-          <h5 class="post-description"></h5>
-        </header>
-
-        <article class="post-content <strong>Moab Arar</strong> clearfix">
-
-          <div class="profile col one right">
-
-            <img class="one" src="/assets/img/me.jpg">
-
-
+        <section class="profile-hero" id="about">
+          <div class="header-profile">
+            <img src="/assets/img/me.jpg" alt="Portrait of Moab Arar" width="493" height="640">
           </div>
 
-          <p>I am a Research Scientist at FAIR (Meta)</p>
+          <div class="profile-body">
+            <p class="profile-kicker">Research Scientist at FAIR (Meta)</p>
+            <h1 class="post-title"><strong>Moab Arar</strong></h1>
 
-          <p>My research focuses on <strong>Generative Video Models</strong>, <strong>Real-time Video Generation</strong>, and <strong>World Models</strong>.</p>
+            <p class="profile-summary">I work on generative models that learn to create, simulate, and control visual worlds, with a focus on <strong>Generative Video Models</strong>, <strong>Real-time Video Generation</strong>, <strong>World Models</strong>, and <strong>personalization of text-to-video and text-to-image models</strong>.</p>
 
-          <p>I completed my PhD at Tel Aviv University, advised by <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank">Amit Bermano</a> and <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank">Ariel Shamir</a>. Previously, I was a research intern at Google and Meta.</p>
+            <p class="profile-detail">I completed my PhD at Tel Aviv University, advised by <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank" rel="noopener">Amit Bermano</a> and <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank" rel="noopener">Ariel Shamir</a>. Previously, I was a research intern at Google and Meta.</p>
+
+            <div class="research-tags" aria-label="Research areas">
+              <span>Video generation</span>
+              <span>Diffusion models</span>
+              <span>T2V/T2I personalization</span>
+              <span>World models</span>
+            </div>
+
+            <p class="intro-links">
+              <a href="mailto:moabarar@mail.tau.ac.il" aria-label="Email" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+              <a href="https://scholar.google.com/citations?user=uiFoSGMAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a>
+              <a href="https://github.com/moabarar" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+              <a class="icon-only" href="https://x.com/ararmoab" target="_blank" rel="noopener" aria-label="X" title="X"><span class="x-icon" aria-hidden="true">X</span></a>
+            </p>
+          </div>
+        </section>
 
 
-        </article>
-
-
-        <!---- Publications ----->
+        <!-- Publications -->
         <div class="publications" id="publications">
           <div class="news">
-            <h3 style="font-size: 24px">Publications</h3>
+            <h2>Publications</h2>
           </div>
 
           <ol class="bibliography">
@@ -88,26 +96,29 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/gamengen.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/windinet_preview.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="WinDiNet urban wind-flow simulation previews">
                 </div>
 
                 <div class="col two">
 
 
-                  <div id="gamengen">
+                  <div id="perini2026windinet">
 
-                    <span class="title" style="font-weight: bold">Diffusion Models Are Real-Time Game Engines</span>
+                    <span class="title" style="font-weight: bold">Pretrained Video Models as Differentiable Physics Simulators for Urban Wind Flows</span>
                     <span class="author">
-                      <a href="https://scholar.google.com/citations?user=ECKZ08wAAAAJ&hl=en">Dani Valevski* </a>,
-                      <a href="https://yanivle.github.io/about/">Yaniv Leviathan* </a>,
-                      <b> Moab Arar*</b>,
-                      <a href="https://shlomifruchter.github.io/" target="_blank"> Shlomi Fruchter*</a>
+                      <a href="https://ch.linkedin.com/in/janneperini" target="_blank" rel="noopener">Janne Perini*</a>,
+                      <a href="https://rabischof.ch/" target="_blank" rel="noopener">Rafael Bischof*</a>,
+                      <b> Moab Arar</b>,
+                      <a href="https://aycaduran.com/" target="_blank" rel="noopener"> Ay&ccedil;a Duran</a>,
+                      <a href="https://mkrausai.com/" target="_blank" rel="noopener"> Michael A. Kraus</a>,
+                      <a href="https://camlab.ethz.ch/the-group/people.html?u=smishra" target="_blank" rel="noopener"> Siddhartha Mishra</a>,
+                      <a href="https://berndbickel.com/" target="_blank" rel="noopener"> Bernd Bickel</a>
                     </span>
 
                     <span class="periodical">
                       <span class="links">
 
-                        <em style="font-weight: bold; color: #00008B;">Accepted to ICLR, 2025.</em>
+                        <em style="font-weight: bold; color: #00008B;">Accepted to ECCV, 2026.</em>
 
 
                       </span>
@@ -117,10 +128,59 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2408.14837" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2603.21210" target="_blank" rel="noopener">Paper</a>
 
 
-                      <a class="btn button" href="https://gamengen.github.io/" target="_blank">Page</a>
+                      <a class="btn button" href="https://rbischof.github.io/windinet_web/" target="_blank" rel="noopener">Page</a>
+
+                      <a class="btn button" href="https://github.com/rbischof/windinet" target="_blank" rel="noopener">Code</a>
+
+
+                    </span>
+
+                  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="img_row" style="height: 100%;">
+
+                <div class="col one ">
+                  <img src="/assets/img/gamengen.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="Gameplay frames generated by GameNGen">
+                </div>
+
+                <div class="col two">
+
+
+                  <div id="gamengen">
+
+                    <span class="title" style="font-weight: bold">Diffusion Models Are Real-Time Game Engines</span>
+                    <span class="author">
+                      <a href="https://scholar.google.com/citations?user=ECKZ08wAAAAJ&amp;hl=en">Dani Valevski* </a>,
+                      <a href="https://yanivle.github.io/about/">Yaniv Leviathan* </a>,
+                      <b> Moab Arar*</b>,
+                      <a href="https://shlomifruchter.github.io/" target="_blank" rel="noopener"> Shlomi Fruchter*</a>
+                    </span>
+
+                    <span class="periodical">
+                      <span class="links">
+
+                        <em style="font-weight: bold; color: #00008B;">ICLR, 2025.</em>
+
+
+                      </span>
+
+                    </span>
+
+
+                    <span class="links">
+
+                      <a class="btn button" href="https://arxiv.org/abs/2408.14837" target="_blank" rel="noopener">Paper</a>
+
+
+                      <a class="btn button" href="https://gamengen.github.io/" target="_blank" rel="noopener">Page</a>
 
 
                     </span>
@@ -136,7 +196,7 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/palp.png" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/palp.png" class="rounded z-depth-1" style="max-width: 100%;" alt="PALP text-to-image personalization examples">
                 </div>
 
                 <div class="col two">
@@ -150,17 +210,17 @@
 
                       <a href="https://anvoynov.github.io/anvoynov/"> Andrey Voynov</a>,
 
-                      <a href="https://amirhertz.github.io/" target="_blank"> Amir Hertz</a>,
+                      <a href="https://amirhertz.github.io/" target="_blank" rel="noopener"> Amir Hertz</a>,
                       
                       <a href="https://omriavrahami.com/"> Omri Avrahami</a>,
 
-                      <a href="https://shlomifruchter.github.io/" target="_blank"> Shlomi Fruchter</a>,
+                      <a href="https://shlomifruchter.github.io/" target="_blank" rel="noopener"> Shlomi Fruchter</a>,
                       
-                      <a href="https://scholar.google.co.il/citations?user=Zi5KiDsAAAAJ&hl=en" target="_blank"> Yael Pritch</a>,
+                      <a href="https://scholar.google.co.il/citations?user=Zi5KiDsAAAAJ&amp;hl=en" target="_blank" rel="noopener"> Yael Pritch</a>,
                       
-                      <a href="https://danielcohenor.com/" target="_blank"> Daniel Cohen-Or</a>,
+                      <a href="https://danielcohenor.com/" target="_blank" rel="noopener"> Daniel Cohen-Or</a>,
                       
-                      <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank"> Ariel Shamir</a>
+                      <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank" rel="noopener"> Ariel Shamir</a>
 
                     </span>
 
@@ -177,10 +237,10 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2401.06105" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2401.06105" target="_blank" rel="noopener">Paper</a>
 
 
-                      <a class="btn button" href="https://prompt-aligned.github.io/" target="_blank">Page</a>
+                      <a class="btn button" href="https://prompt-aligned.github.io/" target="_blank" rel="noopener">Page</a>
 
 
                     </span>
@@ -195,25 +255,25 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/anylens.jpg" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/anylens.jpg" class="rounded z-depth-1" style="max-width: 100%;" alt="Curved Diffusion optical geometry examples">
                 </div>
 
                 <div class="col two">
 
 
-                  <div id="avrahami2024chosen">
+                  <div id="voynov2024curved">
 
                     <span class="title" style="font-weight: bold">Curved Diffusion: A Generative Model With Optical Geometry Control</span>
                     <span class="author">
                       <a href="https://anvoynov.github.io/anvoynov/">Andrey Voynov</a>,
 
-                      <a href="https://amirhertz.github.io/" target="_blank"> Amir Hertz</a>,
+                      <a href="https://amirhertz.github.io/" target="_blank" rel="noopener"> Amir Hertz</a>,
                       
                       <b> Moab Arar</b>,
                       
-                      <a href="https://shlomifruchter.github.io/" target="_blank"> Shlomi Fruchter</a>,
+                      <a href="https://shlomifruchter.github.io/" target="_blank" rel="noopener"> Shlomi Fruchter</a>,
                       
-                      <a href="https://danielcohenor.com/" target="_blank"> Daniel Cohen-Or</a>,
+                      <a href="https://danielcohenor.com/" target="_blank" rel="noopener"> Daniel Cohen-Or</a>,
 
                     </span>
 
@@ -230,10 +290,10 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2311.17609" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2311.17609" target="_blank" rel="noopener">Paper</a>
 
 
-                      <a class="btn button" href="https://anylens-diffusion.github.io/" target="_blank">Page</a>
+                      <a class="btn button" href="https://anylens-diffusion.github.io/" target="_blank" rel="noopener">Page</a>
 
 
                     </span>
@@ -248,7 +308,7 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/the_chosen_one.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/the_chosen_one.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="The Chosen One consistent character examples">
                 </div>
 
                 <div class="col two">
@@ -260,19 +320,19 @@
                     <span class="author">
                       <a href="https://omriavrahami.com/">Omri Avrahami</a>,
 
-                      <a href="https://amirhertz.github.io/" target="_blank"> Amir Hertz</a>,
+                      <a href="https://amirhertz.github.io/" target="_blank" rel="noopener"> Amir Hertz</a>,
 
                       <a href="https://yael-vinker.github.io/website/"> Yael Vinker</a>,
                       
                       <b>Moab Arar</b>,
                       
-                      <a href="https://shlomifruchter.github.io/" target="_blank"> Shlomi Fruchter</a>,
+                      <a href="https://shlomifruchter.github.io/" target="_blank" rel="noopener"> Shlomi Fruchter</a>,
                       
-                      <a href="https://www.ohadf.com/" target="_blank"> Ohad Fried</a>,
+                      <a href="https://www.ohadf.com/" target="_blank" rel="noopener"> Ohad Fried</a>,
 
-                      <a href="https://danielcohenor.com/" target="_blank"> Daniel Cohen-Or</a>,
+                      <a href="https://danielcohenor.com/" target="_blank" rel="noopener"> Daniel Cohen-Or</a>,
 
-                      <a href="https://www.cs.huji.ac.il/~danix/" target="_blank"> Dani Lischinski</a>,
+                      <a href="https://www.cs.huji.ac.il/~danix/" target="_blank" rel="noopener"> Dani Lischinski</a>,
 
                     </span>
 
@@ -289,10 +349,10 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2311.10093" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2311.10093" target="_blank" rel="noopener">Paper</a>
 
 
-                      <a class="btn button" href="https://omriavrahami.com/the-chosen-one/" target="_blank">Page</a>
+                      <a class="btn button" href="https://omriavrahami.com/the-chosen-one/" target="_blank" rel="noopener">Page</a>
 
 
                     </span>
@@ -308,7 +368,7 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/sinmdm.jpg" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/sinmdm.jpg" class="rounded z-depth-1" style="max-width: 100%;" alt="Single Motion Diffusion motion synthesis examples">
                 </div>
 
                 <div class="col two">
@@ -321,15 +381,15 @@
 
                       <a href="https://sigal-raab.github.io/">Sigal Rab*</a>,
 
-                      <a href="https://scholar.google.com/citations?user=u6qz2P8AAAAJ" target="_blank"> Inbal Leibovitch*</a>,
+                      <a href="https://scholar.google.com/citations?user=u6qz2P8AAAAJ" target="_blank" rel="noopener"> Inbal Leibovitch*</a>,
 
                       <a href="https://guytevet.github.io/"> Guy Tevet</a>,
                       
                       <b>Moab Arar</b>,
                       
-                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank"> Amit H Bermano</a>,
+                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank" rel="noopener"> Amit H Bermano</a>,
 
-                      <a href="https://danielcohenor.com/" target="_blank"> Daniel Cohen-Or</a>
+                      <a href="https://danielcohenor.com/" target="_blank" rel="noopener"> Daniel Cohen-Or</a>
 
                     </span>
 
@@ -346,12 +406,12 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2302.05905" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2302.05905" target="_blank" rel="noopener">Paper</a>
 
 
-                      <a class="btn button" href="https://sinmdm.github.io/SinMDM-page/" target="_blank">Page</a>
+                      <a class="btn button" href="https://sinmdm.github.io/SinMDM-page/" target="_blank" rel="noopener">Page</a>
 
-                      <a class="btn button" href="https://github.com/SinMDM/SinMDM" target="_blank">Code</a>
+                      <a class="btn button" href="https://github.com/SinMDM/SinMDM" target="_blank" rel="noopener">Code</a>
 
                     </span>
 
@@ -365,7 +425,7 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/date_encoder.jpg" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/date_encoder.jpg" class="rounded z-depth-1" style="max-width: 100%;" alt="Domain-Agnostic Tuning-Encoder personalization examples">
                 </div>
 
                 <div class="col two">
@@ -381,15 +441,15 @@
 
                       <a href="https://rinongal.github.io"> Rinon Gal</a>,
 
-                      <a href="https://research.nvidia.com/person/yuval-atzmon" target="_blank">Yuval Atzmon</a>,
+                      <a href="https://research.nvidia.com/person/yuval-atzmon" target="_blank" rel="noopener">Yuval Atzmon</a>,
 
-                      <a href="https://research.nvidia.com/person/gal-chechik" target="_blank"> Gal Chechik</a>,
+                      <a href="https://research.nvidia.com/person/gal-chechik" target="_blank" rel="noopener"> Gal Chechik</a>,
 
-                      <a href="https://danielcohenor.com/" target="_blank"> Daniel Cohen-Or</a>,
+                      <a href="https://danielcohenor.com/" target="_blank" rel="noopener"> Daniel Cohen-Or</a>,
 
-                      <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank"> Ariel Shamir</a>,
+                      <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank" rel="noopener"> Ariel Shamir</a>,
 
-                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank"> Amit H Bermano</a>
+                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank" rel="noopener"> Amit H Bermano</a>
 
                     </span>
 
@@ -406,10 +466,10 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2307.06925" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2307.06925" target="_blank" rel="noopener">Paper</a>
 
 
-                      <a class="btn button" href="https://datencoder.github.io/" target="_blank">Page</a>
+                      <a class="btn button" href="https://datencoder.github.io/" target="_blank" rel="noopener">Page</a>
 
                     </span>
 
@@ -423,7 +483,7 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/e4t.jpg" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/e4t.jpg" class="rounded z-depth-1" style="max-width: 100%;" alt="Encoder-based Domain Tuning generated image examples">
                 </div>
 
                 <div class="col two">
@@ -440,13 +500,13 @@
                       <b> Moab Arar</b>,
 
 
-                      <a href="https://research.nvidia.com/person/yuval-atzmon" target="_blank"> Yuval Atzmon</a>,
+                      <a href="https://research.nvidia.com/person/yuval-atzmon" target="_blank" rel="noopener"> Yuval Atzmon</a>,
 
-                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank"> Amit H Bermano</a>,
+                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank" rel="noopener"> Amit H Bermano</a>,
 
-                      <a href="https://research.nvidia.com/person/gal-chechik" target="_blank"> Gal Chechik</a>,
+                      <a href="https://research.nvidia.com/person/gal-chechik" target="_blank" rel="noopener"> Gal Chechik</a>,
 
-                      <a href="https://danielcohenor.com/" target="_blank"> Daniel Cohen-Or</a>
+                      <a href="https://danielcohenor.com/" target="_blank" rel="noopener"> Daniel Cohen-Or</a>
 
 
 
@@ -466,10 +526,10 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2302.12228" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2302.12228" target="_blank" rel="noopener">Paper</a>
 
 
-                      <a class="btn button" href="https://tuning-encoder.github.io/" target="_blank">Page</a>
+                      <a class="btn button" href="https://tuning-encoder.github.io/" target="_blank" rel="noopener">Page</a>
 
                     </span>
 
@@ -483,22 +543,22 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/qna-web.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/qna-web.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="Learned Queries for Efficient Local Attention visualization">
                 </div>
 
                 <div class="col two">
 
 
-                  <div id="moab">
+                  <div id="arar2022learned">
 
                     <span class="title" style="font-weight: bold">Learned Queries for Efficient Local Attention </span>
                     <span class="author">
 
                       <b>Moab Arar </b>,
 
-                      <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank">Ariel Shamir </a>,
+                      <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank" rel="noopener">Ariel Shamir </a>,
 
-                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank">Amit H Bermano </a>
+                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank" rel="noopener">Amit H Bermano </a>
 
 
 
@@ -517,10 +577,10 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2112.11435" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2112.11435" target="_blank" rel="noopener">Paper</a>
 
 
-                      <a class="btn button" href="https://github.com/moabarar/qna" target="_blank">Code</a>
+                      <a class="btn button" href="https://github.com/moabarar/qna" target="_blank" rel="noopener">Code</a>
 
                     </span>
 
@@ -534,22 +594,22 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/InAugment_2.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/InAugment_2.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="InAugment internal augmentation visualization">
                 </div>
 
                 <div class="col two">
 
 
-                  <div id="moab">
+                  <div id="arar2021inaugment">
 
                     <span class="title" style="font-weight: bold">InAugment: Improving Classifiers via Internal Augmentation</span>
                     <span class="author">
 
                       <b>Moab Arar </b>,
 
-                      <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank">Ariel Shamir </a>,
+                      <a href="https://faculty.runi.ac.il/arik/site/index.asp" target="_blank" rel="noopener">Ariel Shamir </a>,
 
-                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank">Amit H Bermano </a>
+                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank" rel="noopener">Amit H Bermano </a>
 
 
 
@@ -568,7 +628,7 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2104.03843" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2104.03843" target="_blank" rel="noopener">Paper</a>
 
                     </span>
 
@@ -583,29 +643,29 @@
               <div class="img_row" style="height: 100%;">
 
                 <div class="col one ">
-                  <img src="/assets/img/nemar.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+                  <img src="/assets/img/nemar.gif" class="rounded z-depth-1" style="max-width: 100%;" alt="NEMAR multimodal image registration result">
                 </div>
 
                 <div class="col two">
 
 
-                  <div id="moab">
+                  <div id="arar2020nemar">
 
                     <span class="title" style="font-weight: bold">Unsupervised Multi-Modal Image Registration via Geometry Preserving Image-to-Image Translation </span>
                     <span class="author">
 
                       <b>Moab Arar </b>,
 
-                      <a href="https://scholar.google.co.il/citations?user=aLpZkiEAAAAJ&hl=iw" target="_blank">Yiftach Ginger </a>,
+                      <a href="https://scholar.google.co.il/citations?user=aLpZkiEAAAAJ&amp;hl=iw" target="_blank" rel="noopener">Yiftach Ginger </a>,
                       
-                      <a href="https://scholar.google.co.il/citations?user=dEGDyVUAAAAJ&hl=en" target="_blank">Dov Danon </a>,
+                      <a href="https://scholar.google.co.il/citations?user=dEGDyVUAAAAJ&amp;hl=en" target="_blank" rel="noopener">Dov Danon </a>,
 
                       Ilya Leizerson,
                       
-                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank">Amit H Bermano </a>,
+                      <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank" rel="noopener">Amit H Bermano </a>,
 
 
-                      <a href="https://danielcohenor.com/" target="_blank">Daniel Cohen-Or </a>
+                      <a href="https://danielcohenor.com/" target="_blank" rel="noopener">Daniel Cohen-Or </a>
 
 
 
@@ -625,10 +685,10 @@
 
                     <span class="links">
 
-                      <a class="btn button" href="https://arxiv.org/abs/2003.08073" target="_blank">Paper</a>
+                      <a class="btn button" href="https://arxiv.org/abs/2003.08073" target="_blank" rel="noopener">Paper</a>
 
 
-                      <a class="btn button" href="https://github.com/moabarar/nemar" target="_blank">Code</a>
+                      <a class="btn button" href="https://github.com/moabarar/nemar" target="_blank" rel="noopener">Code</a>
 
                     </span>
 
@@ -639,72 +699,16 @@
             </li>
           
           </ol>
-        <!------  TALKS ------>
-        <div class="news" id="talks">
-          <h2>Talks</h2>
-
-          <table>
-            <tr>
-              <td class="date">Sep, 2024</td>
-              <td class="announcement">
-                ML Seminar @ CMU:<br>
-                <i>Deep Neural Components and Training Methodologies in Vision</i>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="date">May, 2022</td>
-              <td class="announcement">
-                ML Seminar @ Google, New-York:<br>
-                <i>Learned Queries for Efficient Local Attention</i>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="date">May, 2022</td>
-              <td class="announcement">
-                ML Seminar @ Amazon, Tel-Aviv:<br>
-                <i>Learned Queries for Efficient Local Attention</i>
-              </td>
-
-            </tr>
-
-          </table>
-
         </div>
-
-
-
-
-
-        <div class="social" id="social">
-          <h2>Contact Me</h2>
-          <span class="contacticon center">
-            <a href="mailto:moabarar@mail.tau.ac.il"><i class="fa fa-envelope-square"></i></a>
-            <a href="https://www.semanticscholar.org/author/Moab-Arar/34905004" target="_blank"
-              title="Semantic Scholar"><i class="ai ai-semantic-scholar-square"></i></a>
-            <a href="https://scholar.google.com/citations?user=uiFoSGMAAAAJ&hl=en" target="_blank"
-              title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a>
-            <a href="https://github.com/moabarar" target="_blank" title="GitHub"><i class="fa fa-github-square"></i></a>
-            <a href="https://x.com/ararmoab" target="_blank" title="Twitter" class="contact-icon"><i
-                class="fa fa-twitter-square"></i></a>
-          </span>
-
-          <div class="col three caption">
-
-          </div>
-        </div>
-
-
         </div>
     </div>
   </div>
 
 
-  <div class="wrapper" style="font-size: 10px">
-    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a
-      href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/"
-      target="_blank">GitHub Pages</a>.
+  <div class="wrapper site-credit">
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> with <a
+      href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener">al-folio</a> theme. Hosted by <a href="https://pages.github.com/"
+      target="_blank" rel="noopener">GitHub Pages</a>.
 
   </div>
 
@@ -729,11 +733,6 @@
     anchors.options.visible = 'always';
     anchors.add('article h2, article h3, article h4, article h5, article h6');
   </script>
-
-
-  <!-- Include custom icon fonts -->
-  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/assets/css/academicons.min.css">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG9T5NN4X6"></script>
